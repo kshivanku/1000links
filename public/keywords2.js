@@ -11,7 +11,7 @@ $(document).ready(function(){
       for(var j = 0 ; j < pub_keywords.length ; j++){
         var id = pub + "_keyword_" + j;
         if(data[pub][j][2] != null) {
-          $('#'+pub).append('<a href='+data[pub][j][2]+'><p class=pub_keyword id='+id+'>'+pub_keywords[j][0]+'</p></a>');
+          $('#'+pub).append('<a href='+data[pub][j][2]+' target="_blank"><p class=pub_keyword id='+id+'>'+pub_keywords[j][0]+'</p></a>');
         }
         else{
           $('#'+pub).append('<p class=pub_keyword id='+id+'>'+pub_keywords[j][0]+'</p>');
